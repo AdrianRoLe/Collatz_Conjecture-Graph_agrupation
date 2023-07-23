@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Collatz Conjecture Graph</title>
+	</head>
+	<body>
+		<h1>Collatz Conjecture Graph</h1>
+		<h2>It may take a while to load</h2>
+		<div id="container">
+			<div class="row">
+				<div class="col">
+					<canvas id="grid-1" width="400" height="400"></canvas>
+					<canvas id="grid-2" width="400" height="400"></canvas>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<canvas id="grid-3" width="400" height="400"></canvas>
+					<canvas id="grid-4" width="400" height="400"></canvas>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<canvas id="grid-5" width="400" height="400"></canvas>
+					<canvas id="grid-6" width="400" height="400"></canvas>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+		<script src="maths.js"></script>
+		<style>
+			#container {
+				place-content: center;
+				place-items: center;
+				margin: 0 auto;
+				width: 80vw;
+				max-width: 80vw;
+			}
+			.row {
+				display: flex;
+				height: 40vw;
+				max-height: 40vw;
+			}
+			.col {
+				display: flex;
+				width: 40vw;
+				max-width: 40vw;
+			}
+		</style>
+	</body>
+</html>
