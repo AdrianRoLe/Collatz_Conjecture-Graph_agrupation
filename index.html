@@ -4,7 +4,46 @@
 	</head>
 	<body>
 		<h1>Collatz Conjecture Graph</h1>
-		<h2>It may take a while to load</h2>
+		<div class="flex">
+			<div>
+				<button id="generate_graphs">Run Graphs</button>
+			</div>
+			<div>
+				<button id="generate_optimized_graph">
+					Run Optimized Graph
+				</button>
+			</div>
+		</div>
+		<div id="container">
+			<div class="row">
+				<div class="col">
+					<canvas
+						id="grid-opt-includes"
+						width="400"
+						height="400"
+					></canvas>
+					<canvas
+						id="grid-opt-divide"
+						width="400"
+						height="400"
+					></canvas>
+				</div>
+			</div>
+			<div id="stats_container" style="display: none">
+				Percentage of numbers that with 2 iterations we know that they
+				will reach 1: <span id="percentage"></span>
+				<br />
+				(since the number of iterations starts at 1, 2 is the minimum
+				number of iterations needed to know that a number will reach 1)
+				<br />
+				<br />
+				Permormance with "array contains":
+				<span id="performance_contains"></span>
+				<br />
+				Permormance with "divide and conquer":
+				<span id="performance_divide"></span>
+			</div>
+		</div>
 		<div id="container">
 			<div class="row">
 				<div class="col">
